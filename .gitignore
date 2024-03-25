@@ -2,3 +2,4 @@ dev/
 .ipynb_checkpoints
 qrnn*
 .Trash*
+__pycache__\

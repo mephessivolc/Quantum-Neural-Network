@@ -8,6 +8,9 @@ class Graph:
     
     def get_matrix(self):
         return self.array
+
+    def get_flatten_matrix(self):
+        return self.get_matrix().flatten()
     
     def get_graph(self):
         return nx.from_numpy_array(self.array)
@@ -15,7 +18,7 @@ class Graph:
     def get_chrome_number(self):
         return len(set(nx.coloring.greedy_color(self.get_graph()).values()))
 
-    
+# Construction test
 if __name__ == "__main__":
     
     graph_list = []
